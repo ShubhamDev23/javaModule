@@ -1,0 +1,52 @@
+class methods{
+    public static void main(String[] args){
+//Q1: Write a program that demonstrates widening conversion from int to double and prints the result.
+        System.out.println("Question 1:");
+        int temp=111;
+        double DouTemp=temp;
+        System.out.println("Original integer value: " + temp + ", Type: " + Integer.class.getSimpleName());
+        System.out.println("Converted double value: " + DouTemp + ", Type: " + Double.class.getSimpleName());
+
+ //Q2  Create a program that demonstrates narrowing conversion from double to int and prints the result. 
+        System.out.println("Question 2:");
+        double dx = 20.5;
+        
+        int intValue = (int) dx; 
+        System.out.println("Original double value: " + dx);
+        System.out.println("Converted int value: " + intValue);
+
+    //Q3  Write a program that performs arithmetic operations involving different data types (int, double, float)
+        and observes how Java handles widening conversions automatically. 
+
+    System.out.println("Question 2:");
+        int intV = 5;
+        double dblV = 3.5;
+        float fltV = 2.5f;
+        double result1 = intV + dblV; 
+        float result2 = intV +fltV ;   
+        double result3 = dblV +fltV ; 
+        
+        System.out.println("Result of int + double: " + result1);
+        System.out.println("Result of int + float: " + result2);
+        System.out.println("Result of double + float: " + result3);
+
+
+
+//Q4 Write a Program that demonstrates widening conversion from int to (double,float, boolean, string) and
+    prints the result.
+        System.out.println("Question 4:");
+        int x = 234;
+
+        double dX = x;
+        float fX = x;
+        boolean bX = (x != 0);
+        String strX = Integer.toString(x);
+
+        System.out.println("Original (x): " + x);
+        System.out.println("WC to double (x): " + dX);
+        System.out.println("WC float (x): " + fX);
+        System.out.println("WC boolean (x): " + bX);
+        System.out.println("WC String (x): " + strX);
+    
+    }
+}

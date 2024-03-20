@@ -1,0 +1,74 @@
+1 . Method overloading in Java:
+Method overloading in Java allows a class to have multiple methods with the same name but with
+different parameters. Java distinguishes between these methods based on their number, type, and order
+of parameters. Example.
+
+public class Calculator {
+public int add(int a, int b) {
+return a + b;
+}
+
+public double add(double a, double b) {
+return a + b;
+}
+}
+2. Rules for method overloading resolution:
+Java determines which overloaded method to call based on the most specific matching parameters. If
+there’s an exact match, Java selects that method. If not, it looks for the next closest match based on
+parameter types, preferring widening conversions over narrowing conversions.
+
+3. Static keyword in Java:
+In Java, the static keyword is used to declare members (variables and methods) that belong to the class
+rather than to instances of the class. Static members are shared among all instances of the class.
+Non-static methods and variables belong to individual instances of the class.
+
+4. Static methods in Java:
+Static methods can be overloaded but not overridden. Overloading allows defining multiple methods with
+the same name but different parameter lists. Static variables are shared across all instances of a class,
+meaning changes to a static variable made by one instance affect all other instances.
+
+5. Static keyword in memory management:
+The static keyword in Java ensures that only one instance of a variable exists in memory, regardless of
+how many instances of the class are created. It’s allocated memory at compile-time and remains in
+memory throughout the execution of the program.
+
+6. Final keyword in Java:
+The final keyword in Java is used to restrict the user from changing the value of a variable, overriding a
+method, or inheriting from a class. It ensures that a variable can only be initialized once, a method cannot
+be overridden, and a class cannot be subclassed.
+
+7. Final method overriding:
+No, a final method cannot be overridden in a subclass. The final keyword prevents modification of the
+method’s behavior in subclasses. Variables marked as final cannot be reassigned, methods cannot be
+overridden, and classes cannot be subclassed.
+
+8. This keyword in Java:
+The this keyword in Java refers to the current instance of the class. It is primarily used within constructors
+and methods to refer to the current object. In constructors, this is used to differentiate between instance
+variables and parameters with the same name. In methods, this is used to call other constructors or
+methods of the same class.
+
+9. Narrowing and widening conversions:
+Narrowing conversion occurs when a data type with a larger range is converted to a data type with a
+smaller range, potentially losing information. Widening conversion is the opposite, where a data type with
+a smaller range is converted to a data type with a larger range, without loss of information.
+
+10. Examples of conversions:
+Narrowing conversion: int to short or float to int.
+Widening conversion: byte to int or int to long.
+
+11. Handling precision loss:
+Java handles potential loss of precision during narrowing conversions by truncating the extra bits without
+raising any errors or exceptions. It’s the responsibility of the programmer to ensure that the loss of
+precision is acceptable for the application’s requirements.
+
+12. Automatic widening conversion:
+Automatic widening conversion occurs when a value of a smaller data type is assigned to a variable of a
+larger data type. Java automatically promotes the smaller data type to the larger data type to prevent loss
+of information.
+
+13. Implications of conversions:
+Narrowing and widening conversions affect type compatibility and potential data loss. Narrowing
+conversions may lead to loss of precision, while widening conversions are generally safe but can
+potentially lead to unexpected behavior if not handled properly. It’s crucial to understand these
+implications when designing and implementing Java applications.
